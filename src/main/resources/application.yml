@@ -27,7 +27,7 @@ spring:
         - id: promotion
           uri: http://localhost:8085
           predicates:
-              - Path=/promotions/**
+            - Path=/promotions/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -66,6 +66,7 @@ spring:
         - id: promotion
           uri: http://promotion:8080
           predicates:
+            - Path=/promotion/**
       globalcors:
         corsConfigurations:
           '[/**]':
