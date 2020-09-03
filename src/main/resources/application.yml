@@ -23,7 +23,11 @@ spring:
         - id: seat
           uri: http://localhost:8084
           predicates:
-            - Path=/seats/** 
+            - Path=/seats/**
+        - id: promotion
+            uri: http://localhost:8085
+            predicates:
+              - Path=/promotions/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -58,7 +62,11 @@ spring:
         - id: seat
           uri: http://seat:8080
           predicates:
-            - Path=/seats/** 
+            - Path=/seats/**
+        - id: promotion
+            uri: http://promotion:8080
+            predicates:
+              - Path=/promotions/**
       globalcors:
         corsConfigurations:
           '[/**]':
