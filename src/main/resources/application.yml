@@ -48,23 +48,23 @@ spring:
     gateway:
       routes:
         - id: booking
-          uri: http://booking:8080
+          uri: http://user18-booking:8080
           predicates:
             - Path=/bookings/** /bookingLists/**
         - id: payment
-          uri: http://payment:8080
+          uri: http://user18-payment:8080
           predicates:
             - Path=/payments/** 
         - id: notification
-          uri: http://notification:8080
+          uri: http://user18-notification:8080
           predicates:
             - Path=/notifications/** 
         - id: seat
-          uri: http://seat:8080
+          uri: http://user18-seat:8080
           predicates:
             - Path=/seats/**
         - id: promotion
-          uri: http://promotion:8080
+          uri: http://user18-promotion:8080
           predicates:
             - Path=/promotion/**
       globalcors:
